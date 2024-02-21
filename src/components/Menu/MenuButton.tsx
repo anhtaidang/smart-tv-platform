@@ -4,7 +4,7 @@ import { Animated, View } from 'react-native';
 import {
   SpatialNavigationNode,
   useSpatialNavigatorFocusableAccessibilityProps,
-} from 'react-tv-space-navigation';
+} from '@/src/lib/react-tv-space-navigation';
 import { Typography } from '../../design-system/components/Typography';
 import { scaledPixels } from '../../design-system/helpers/scaledPixels';
 import { useFocusAnimation } from '../../design-system/helpers/useFocusAnimation';

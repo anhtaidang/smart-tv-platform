@@ -2,7 +2,7 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 import { Button } from '../../../design-system/components/Button';
 import { Typography } from '../../../design-system/components/Typography';
-import { SpatialNavigationNode } from 'react-tv-space-navigation';
+import { SpatialNavigationNode } from '@/src/lib/react-tv-space-navigation';
 import { Spacer } from '../../../design-system/components/Spacer';
 import { Image } from 'react-native';
 import styled from '@emotion/native';

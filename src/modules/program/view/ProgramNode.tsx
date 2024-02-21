@@ -1,10 +1,9 @@
-import { SpatialNavigationNode } from 'react-tv-space-navigation';
+import { SpatialNavigationNode, SpatialNavigationNodeRef } from '@/src/lib/react-tv-space-navigation';
 
 import { ProgramInfo } from '../domain/programInfo';
 import { Program } from './Program';
 import { LongProgram } from './LongProgram';
 import { forwardRef } from 'react';
-import { SpatialNavigationNodeRef } from '../../../../../lib/src/spatial-navigation/types/SpatialNavigationNodeRef';
 
 type Props = {
   programInfo: ProgramInfo;

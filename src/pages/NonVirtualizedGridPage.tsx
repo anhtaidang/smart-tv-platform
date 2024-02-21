@@ -2,7 +2,7 @@ import {
   DefaultFocus,
   SpatialNavigationScrollView,
   SpatialNavigationView,
-} from 'react-tv-space-navigation';
+} from '@/src/lib/react-tv-space-navigation';
 import { Page } from '../components/Page';
 import '../components/configureRemoteControl';
 import { getPrograms } from '../modules/program/infra/programInfos';

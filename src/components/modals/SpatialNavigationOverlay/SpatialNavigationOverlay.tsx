@@ -1,4 +1,4 @@
-import { SpatialNavigationRoot } from '../../../../../lib/src/spatial-navigation/components/Root';
+import { SpatialNavigationRoot } from '@/src/lib/react-tv-space-navigation';
 import { useLockOverlay } from './useLockOverlay';
 
 type SpatialNavigationOverlayProps = {

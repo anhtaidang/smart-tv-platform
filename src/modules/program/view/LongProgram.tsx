@@ -3,7 +3,7 @@ import React from 'react';
 import { Animated, Image, View } from 'react-native';
 import { ProgramInfo } from '../domain/programInfo';
 import { useFocusAnimation } from '../../../design-system/helpers/useFocusAnimation';
-import { useSpatialNavigatorFocusableAccessibilityProps } from 'react-tv-space-navigation';
+import { useSpatialNavigatorFocusableAccessibilityProps } from '@/src/lib/react-tv-space-navigation';
 
 type LongProgramProps = {
   isFocused?: boolean;

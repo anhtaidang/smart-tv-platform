@@ -2,7 +2,7 @@ import {
   DefaultFocus,
   SpatialNavigationNode,
   SpatialNavigationScrollView,
-} from 'react-tv-space-navigation';
+} from '@/src/lib/react-tv-space-navigation';
 import { Page } from '../components/Page';
 import '../components/configureRemoteControl';
 import { programInfos } from '../modules/program/infra/programInfos';
@@ -12,7 +12,7 @@ import { LongProgramNode, ProgramNode } from '../modules/program/view/ProgramNod
 import { theme } from '../design-system/theme/theme';
 import { MutableRefObject, forwardRef, useRef } from 'react';
 import { Button } from '../design-system/components/Button';
-import { SpatialNavigationNodeRef } from '../../../lib/src/spatial-navigation/types/SpatialNavigationNodeRef';
+import { SpatialNavigationNodeRef } from '@/src/lib/react-tv-space-navigation';
 
 const HEADER_SIZE = scaledPixels(400);
 

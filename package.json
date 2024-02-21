@@ -1,6 +1,6 @@
 {
   "name": "smarttv--expo",
-  "main": "expo-router/entry",
+  "main": "index.js",
   "version": "1.0.0",
   "scripts": {
     "start": "expo start",
@@ -13,6 +13,8 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@emotion/native": "^11.11.0",
+    "@emotion/react": "^11.11.3",
     "@expo/vector-icons": "^14.0.0",
     "@react-navigation/native": "^6.0.2",
     "expo": "~50.0.7",
@@ -34,7 +36,9 @@
     "react-native-modal": "^13.0.1",
     "react-native": "npm:react-native-tvos@0.73.2-0",
     "react-native-keyevent": "^0.3.2",
-    "react-native-keyevent-expo-config-plugin": "^1.0.49"
+    "react-native-keyevent-expo-config-plugin": "^1.0.49",
+    "@bam.tech/lrud": "^8.0.1",
+    "lodash.uniqueid": "^4.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
@@ -47,7 +51,9 @@
     "jest-expo": "~50.0.2",
     "react-test-renderer": "18.2.0",
     "typescript": "^5.1.3",
-    "metro-react-native-babel-preset": "^0.76.7"
+    "metro-react-native-babel-preset": "^0.76.7",
+    "@testing-library/react-native": "^12.3.1",
+    "@types/lodash.uniqueid": "^4.0.8"
   },
   "private": true,
   "expo": {
