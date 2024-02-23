@@ -9,7 +9,7 @@ module.exports = function (api) {
         // "@babel/preset-typescript"
     // ],
     "plugins": [
-      ["react-native-web", { commonjs: true }]
+      ["react-native-web"]
     ]
   };
 };
