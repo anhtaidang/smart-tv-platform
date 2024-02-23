@@ -28,6 +28,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "../../../Library/Caches/JetBrains/WebStorm2022.1/javascript/typings/jest/29.2.1/node_modules/@types/jest/index.d.ts"
   ]
 }
