@@ -1,10 +1,15 @@
-import { useNavigation } from '@react-navigation/native';
 import { useEffect } from 'react';
+import { useNavigation } from '@react-navigation/native';
 import RemoteControlManager from './remote-control/RemoteControlManager';
 import { SupportedKeys } from './remote-control/SupportedKeys';
 
 export const GoBackConfiguration = () => {
   const navigation = useNavigation();
+
+  useEffect(() => {
+    console.log('initRemoteControlManager');
+    RemoteControlManager.initRemoteControlManager();
+  },[])
 
   useEffect(() => {
     const remoteControlListener = (pressedKey: SupportedKeys) => {

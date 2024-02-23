@@ -3,8 +3,8 @@ import { NavigationContainer } from '@react-navigation/native';
 import { useWindowDimensions } from 'react-native';
 import { GoBackConfiguration } from './src/components/GoBackConfiguration';
 import { theme } from './src/design-system/theme/theme';
-import { Home } from './src/pages/Home';
-import { ProgramGridPage } from './src/pages/ProgramGridPage';
+// import { Home } from './src/pages/Home';
+// import { ProgramGridPage } from './src/pages/ProgramGridPage';
 import { Menu } from './src/components/Menu/Menu';
 import { MenuProvider } from './src/components/Menu/MenuContext';
 import styled from '@emotion/native';
@@ -12,10 +12,11 @@ import { useFonts } from './src/hooks/useFonts';
 import { BottomTabBarProps, createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { ProgramInfo } from './src/modules/program/domain/programInfo';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { ProgramDetail } from './src/pages/ProgramDetail';
-import { NonVirtualizedGridPage } from './src/pages/NonVirtualizedGridPage';
-import { GridWithLongNodesPage } from './src/pages/GridWithLongNodesPage';
+// import { ProgramDetail } from './src/pages/ProgramDetail';
+// import { NonVirtualizedGridPage } from './src/pages/NonVirtualizedGridPage';
+// import { GridWithLongNodesPage } from './src/pages/GridWithLongNodesPage';
 import { useTVPanEvent } from './src/components/PanEvent/useTVPanEvent';
+import ScreenTest from "@/app/components/ScreenTest";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -49,10 +50,10 @@ const TabNavigator = () => {
           backgroundColor: theme.colors.background.main,
         }}
       >
-        <Tab.Screen name="Home" component={Home} />
-        <Tab.Screen name="ProgramGridPage" component={ProgramGridPage} />
-        <Tab.Screen name="NonVirtualizedGridPage" component={NonVirtualizedGridPage} />
-        <Tab.Screen name="GridWithLongNodesPage" component={GridWithLongNodesPage} />
+        <Tab.Screen name="Home" component={ScreenTest} />
+        {/*<Tab.Screen name="ProgramGridPage" component={ProgramGridPage} />*/}
+        {/*<Tab.Screen name="NonVirtualizedGridPage" component={NonVirtualizedGridPage} />*/}
+        {/*<Tab.Screen name="GridWithLongNodesPage" component={GridWithLongNodesPage} />*/}
       </Tab.Navigator>
     </MenuProvider>
   );
@@ -83,7 +84,7 @@ function App(): JSX.Element {
             initialRouteName="TabNavigator"
           >
             <Stack.Screen name="TabNavigator" component={TabNavigator} />
-            <Stack.Screen name="ProgramDetail" component={ProgramDetail} />
+            {/*<Stack.Screen name="ProgramDetail" component={ProgramDetail} />*/}
           </Stack.Navigator>
         </Container>
       </ThemeProvider>

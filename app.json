@@ -26,11 +26,11 @@
     },
     "web": {
       "bundler": "metro",
-//      "output": "static",
+      "output": "static",
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-//      "expo-router",
+      "expo-router",
       "react-native-keyevent-expo-config-plugin",
       [
         "@react-native-tvos/config-tv",

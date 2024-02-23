@@ -9,7 +9,7 @@ const ScreenTest = () => {
                 justifyContent: 'center',
                 alignItems: 'center',
             }}>
-            <Text style={{color:'white'}}>Hello, đasadsdas  đas world!</Text>
+            <Text style={{color:'red'}}>Hello, 32312 32 dsad ádsa world!</Text>
         </View>
     );
 };

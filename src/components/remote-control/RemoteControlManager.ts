@@ -4,7 +4,6 @@ import { RemoteControlManagerInterface } from './RemoteControlManager.interface'
 
 class RemoteControlManager implements RemoteControlManagerInterface {
   constructor() {
-    window.addEventListener('keydown', this.handleKeyDown);
   }
 
   private eventEmitter = mitt<{ keyDown: SupportedKeys }>();
@@ -25,6 +24,10 @@ class RemoteControlManager implements RemoteControlManagerInterface {
 
     this.eventEmitter.emit('keyDown', mappedKey);
   };
+
+  initRemoteControlManager =() => {
+    window.addEventListener('keydown', this.handleKeyDown);
+  }
 
   addKeydownListener = (listener: (event: SupportedKeys) => void) => {
     this.eventEmitter.on('keyDown', listener);
